@@ -1,148 +1,188 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.css">
-        <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-        <script src="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.js"></script>
-        <script>
-            function addToCart(bookName, bookPrice) {
-                //alert(bookName);
-                //alert(bookPrice);
-                
-                $('#cart_list').append('<li><a><h4>'
-                + bookName + '</h4><p>' + bookPrice +
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.css">
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.js"></script>
+    <script>
+        function addToCart(bookName, bookPrice) {
+            //alert(bookName);
+            //alert(bookPrice);
+
+            $('#cart_list').append('<li><a><h4>' + bookName + '</h4><p>' + bookPrice +
                 '</p><a href="#" class="ui-icon-delete" onclick="removeBook()"></a></a></li>');
-                $('#cart_list').listview('refresh');
-            }
-        </script>
-    </head>
-    <body>
-        
-        <!-- ################################################################################
+            $('#cart_list').listview('refresh');
+        }
+    </script>
+</head>
+
+<body>
+
+    <!-- ################################################################################
                                     RESTURANT LIST
              ############################################################################# -->
-        
-        <div data-role="page" id="booklist">
-            <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="b">
-                <h1>Resturants</h1>
-                <a href="#shoppingcart" class="ui-btn ui-btn-right">shopping cart</a>
-            </div>
-            <div data-role="content">
-                <ul data-role="listview" data-inset="true">
-                    <li>        
-                        <a href="#resturant1" data-transition="slide">
+
+    <div data-role="page" id="booklist">
+        <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="b">
+            <h1>Resturants</h1>
+            <a href="#shoppingcart" class="ui-btn ui-btn-right">shopping cart</a>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview" data-inset="true">
+                <li>
+                    <a href="#resturant1" data-transition="slide">
                         <h4>Umi Sushi</h4>
                         <p>Japanese Resturant</p>
                         <p>Sushi, Salad</p>
-                        </a>
-                    </li>
-                    <li>                        
-                        <a href="#resturant2" data-transition="slide">
+                    </a>
+                </li>
+                <li>
+                    <a href="#resturant2" data-transition="slide">
                         <h4>Harvey's</h4>
                         <p>American Resturant</p>
                         <p>Hamburger, Fries</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#resturant3" data-transition="slide">
+                    </a>
+                </li>
+                <li>
+                    <a href="#resturant3" data-transition="slide">
                         <h4>Extreme Pita</h4>
                         <p>Mexcio Resturant</p>
                         <p>Tacco</p>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            
+                    </a>
+                </li>
+            </ul>
         </div>
-        
-        <!-- ################################################################################
+
+    </div>
+
+    <!-- ################################################################################
                                     RESTURANT 1 Umi Sushi
              ############################################################################# -->
-        
-        <div data-role="page" id="resturant1">
-            <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="b">
-                <a href="#" class="ui-btn" data-rel="back">Go Back</a>
-                <h1>Umi Sushi</h1>
-            </div>
-            <div data-role="content">
-                <ul data-role="listview" data-inset="true" id="resturant1list">
 
-                </ul>
-            </div>
-            <div data-role="footer" data-position="fixed" data-tap-toggle="false" data-theme="b">
-            </div>
+    <div data-role="page" id="resturant1">
+        <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="b">
+            <a href="#" class="ui-btn" data-rel="back">Go Back</a>
+            <h1>Umi Sushi</h1>
         </div>
-        
-        <!-- ################################################################################
+        <div data-role="content">
+            <ul data-role="listview" data-inset="true" id="resturant1list">
+                <li>
+                    <a href="#" data-transition="slide">
+                        <img src="img/r1_1.jpg">
+                        <h4>Salmon Rose</h4>
+                        <p>Sushi</p>
+                        <p>Price: $ 6.5</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-transition="slide">
+                        <img src="img/r1_2.jpg">
+                        <h4>Crab Sushi</h4>
+                        <p>Sushi</p>
+                        <p>Price: $ 5.8</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-transition="slide">
+                        <img src="img/r1_3.jpg">
+                        <h4>Avocado Handroll</h4>
+                        <p>Handroll</p>
+                        <p>Price: $ 7.0</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-transition="slide">
+                        <img src="img/r1_4.jpg">
+                        <h4>Chicken Teriyaki</h4>
+                        <p>Chicken</p>
+                        <p>Price: $ 7.9</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-transition="slide">
+                        <img src="img/r1_5.jpg">
+                        <h4>Chicken Udon Soup</h4>
+                        <p>Soup</p>
+                        <p>Price: $ 7.0</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div data-role="footer" data-position="fixed" data-tap-toggle="false" data-theme="b">
+        </div>
+    </div>
+
+    <!-- ################################################################################
                                     RESTURANT 2 Harvey's
              ############################################################################# -->
-        
-        <div data-role="page" id="resturant2">
-            <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="b">
-                <a href="#" class="ui-btn" data-rel="back">Go Back</a>
-                <h1>Harvey's</h1>
-            </div>
-            <div data-role="content">
-                <ul data-role="listview" data-inset="true" id="resturant2list">
 
-                </ul>
-            </div>
-            <div data-role="footer" data-position="fixed" data-tap-toggle="false" data-theme="b">
-            </div>
+    <div data-role="page" id="resturant2">
+        <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="b">
+            <a href="#" class="ui-btn" data-rel="back">Go Back</a>
+            <h1>Harvey's</h1>
         </div>
-        
-        <!-- ################################################################################
+        <div data-role="content">
+            <ul data-role="listview" data-inset="true" id="resturant2list">
+
+            </ul>
+        </div>
+        <div data-role="footer" data-position="fixed" data-tap-toggle="false" data-theme="b">
+        </div>
+    </div>
+
+    <!-- ################################################################################
                                     RESTURANT 3 Extreme Pita
              ############################################################################# -->
-        
-        <div data-role="page" id="resturant3">
-            <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="b">
-                <a href="#" class="ui-btn" data-rel="back">Go Back</a>
-                <h1>Extreme Pita</h1>
-            </div>
-            <div data-role="content">
-                <ul data-role="listview" data-inset="true" id="resturant3list">
 
-                </ul>
-            </div>
-            <div data-role="footer" data-position="fixed" data-tap-toggle="false" data-theme="b">
-            </div>
+    <div data-role="page" id="resturant3">
+        <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="b">
+            <a href="#" class="ui-btn" data-rel="back">Go Back</a>
+            <h1>Extreme Pita</h1>
         </div>
-        
-        <!-- ################################################################################
+        <div data-role="content">
+            <ul data-role="listview" data-inset="true" id="resturant3list">
+
+            </ul>
+        </div>
+        <div data-role="footer" data-position="fixed" data-tap-toggle="false" data-theme="b">
+        </div>
+    </div>
+
+    <!-- ################################################################################
                                     SHOPPINGCART
              ############################################################################# -->
-        
-        <div data-role="page" id="shoppingcart">
-            <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="b">
-                <a href="#" class="ui-btn" data-rel="back">Go Back</a>
-                <h1>Shopping Cart</h1>
-            </div>
-            <div data-role="content">
-                <ul data-role="listview" data-inset="true" id="cart_list">
 
-                </ul>
-                <a href="#checkout" data-role="button">Check Out</a>
-            </div>
-            <div data-role="footer" data-position="fixed" data-tap-toggle="false" data-theme="b">
-                <p style="margin-left:20px;display:inline-block;">Price: $</p>
-                <p id="price" style="display:inline-block;">0</p>
-            </div>
+    <div data-role="page" id="shoppingcart">
+        <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="b">
+            <a href="#" class="ui-btn" data-rel="back">Go Back</a>
+            <h1>Shopping Cart</h1>
         </div>
-        
-        <!-- ################################################################################
+        <div data-role="content">
+            <ul data-role="listview" data-inset="true" id="cart_list">
+
+            </ul>
+            <a href="#checkout" data-role="button">Check Out</a>
+        </div>
+        <div data-role="footer" data-position="fixed" data-tap-toggle="false" data-theme="b">
+            <p style="margin-left:20px;display:inline-block;">Price: $</p>
+            <p id="price" style="display:inline-block;">0</p>
+        </div>
+    </div>
+
+    <!-- ################################################################################
                                     Check Out
              ############################################################################# -->
-        
-        <div data-role="page" id="checkout">
-            <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="b">
-                <a href="#" class="ui-btn" data-rel="back">Go Back</a>
-                <h1>Check Out</h1>
-            </div>
-            <div data-role="content">
-                <form method="post" action="demoform.asp">
-                    <div class="ui-field-contain">
+
+    <div data-role="page" id="checkout">
+        <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="b">
+            <a href="#" class="ui-btn" data-rel="back">Go Back</a>
+            <h1>Check Out</h1>
+        </div>
+        <div data-role="content">
+            <form method="post" action="demoform.asp">
+                <div class="ui-field-contain">
                     <label for="firstname">First Name:</label>
                     <input type="text" name="firstname" id="firstname">
                     <label for="lastname">Last Name:</label>
@@ -151,15 +191,16 @@
                     <input type="time" name="bday" id="bday">
                     <label for="phonenum">Phone Number:</label>
                     <input type="text" name="phonenum" id="phonenum">
-                    </div>
-                    <a href="#" data-role="button">Order</a>
-                </form>
-            </div>
-            <div data-role="footer" data-position="fixed" data-tap-toggle="false" data-theme="b">
-                <p style="margin-left:20px;display:inline-block;">Price: $</p>
-                <p id="price" style="display:inline-block;">0</p>
-            </div>
+                </div>
+                <a href="#" data-role="button">Order</a>
+            </form>
         </div>
-        
-    </body>
+        <div data-role="footer" data-position="fixed" data-tap-toggle="false" data-theme="b">
+            <p style="margin-left:20px;display:inline-block;">Price: $</p>
+            <p id="price" style="display:inline-block;">0</p>
+        </div>
+    </div>
+
+</body>
+
 </html>
