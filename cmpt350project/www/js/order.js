@@ -132,9 +132,9 @@ function removeFood(resturantName, foodName, foodPrice) {
         delete food3[food3.indexOf(foodName)];
     }
 
-    alert(order1.toString());
-    alert(order2.toString());
-    alert(order3.toString());
+    //alert(order1.toString());
+    //alert(order2.toString());
+    //alert(order3.toString());
 
     $('#cart_list').listview('refresh');
 }
@@ -176,9 +176,9 @@ function checkOut() {
     order2[5] = document.getElementById("bday").value;
     order3[5] = document.getElementById("bday").value;
 
-    alert(order1.toString());
-    alert(order2.toString());
-    alert(order3.toString());
+    //alert(order1.toString());
+    //alert(order2.toString());
+    //alert(order3.toString());
 
     var sentoutdata = "{\"orderArray\":[";
     sentoutdata += "{\"command\":1,";
@@ -239,7 +239,7 @@ function checkOut() {
     }
 
     sentoutdata += "]}]}";
-    alert(sentoutdata);
+    //alert(sentoutdata);
 }
 
 function sendOrder() {
