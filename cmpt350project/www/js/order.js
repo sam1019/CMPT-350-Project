@@ -73,6 +73,7 @@ order3[8] = food3;
 function addToCart(resturantName, foodName, foodPrice) {
     //alert(foodName);
     //alert(foodPrice);
+    alert("Added To Shopping Cart");
 
     $('#cart_list').append('<li id="' + foodName + '"><a><h4>' + foodName + '</h4><p>' + resturantName +
         '</p><p> $' + foodPrice + '</p><a href="#" class="ui-icon-delete" onclick="removeFood(' + "'" + resturantName + "'," + "'" + foodName + "'," + foodPrice + ')"></a></a></li>');
@@ -104,6 +105,9 @@ function addToCart(resturantName, foodName, foodPrice) {
 function removeFood(resturantName, foodName, foodPrice) {
     //alert(id);
     //alert(price);
+
+    alert("Removed From Shopping Cart");
+
     var removeFood = document.getElementById(foodName);
     removeFood.parentElement.removeChild(removeFood);
 
@@ -196,7 +200,7 @@ function checkOut() {
 
     sentoutdata += "]},";
 
-    
+
     sentoutdata += "{\"command\":1,";
     sentoutdata += "\"orderId\":0001,";
     sentoutdata += "\"firstName\":\"" + order2[2] + "\",";
@@ -216,7 +220,7 @@ function checkOut() {
 
     sentoutdata += "]},";
 
-    
+
     sentoutdata += "{\"command\":1,";
     sentoutdata += "\"orderId\":0001,";
     sentoutdata += "\"firstName\":\"" + order3[2] + "\",";
