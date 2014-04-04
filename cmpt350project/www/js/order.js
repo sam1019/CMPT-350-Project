@@ -182,7 +182,7 @@ function checkOut() {
     sentoutdata += "\"firstName\":\"" + order1[2] + "\",";
     sentoutdata += "\"lastName\":\"" + order1[3] + "\",";
     sentoutdata += "\"phone\":" + order1[4] + ",";
-    sentoutdata += "\"picketUpTime\":\"" + order1[5] + "\",";
+    sentoutdata += "\"pickeUpTime\":\"" + order1[5] + "\",";
     sentoutdata += "\"restaurant\":\"UmiSushi\",";
     sentoutdata += "\"price\":" + order1[7] + ",";
     sentoutdata += "\"food\":[";
@@ -196,13 +196,13 @@ function checkOut() {
 
     sentoutdata += "]},";
 
-    var sentoutdata = "";
+    
     sentoutdata += "{\"command\":1,";
     sentoutdata += "\"orderId\":0001,";
     sentoutdata += "\"firstName\":\"" + order2[2] + "\",";
     sentoutdata += "\"lastName\":\"" + order2[3] + "\",";
     sentoutdata += "\"phone\":" + order2[4] + ",";
-    sentoutdata += "\"picketUpTime\":\"" + order2[5] + "\",";
+    sentoutdata += "\"pickeUpTime\":\"" + order2[5] + "\",";
     sentoutdata += "\"restaurant\":\"" + order2[6] + "\",";
     sentoutdata += "\"price\":" + order2[7] + ",";
     sentoutdata += "\"food\":[";
@@ -216,13 +216,13 @@ function checkOut() {
 
     sentoutdata += "]},";
 
-    var sentoutdata = "";
+    
     sentoutdata += "{\"command\":1,";
     sentoutdata += "\"orderId\":0001,";
     sentoutdata += "\"firstName\":\"" + order3[2] + "\",";
     sentoutdata += "\"lastName\":\"" + order3[3] + "\",";
     sentoutdata += "\"phone\":" + order3[4] + ",";
-    sentoutdata += "\"picketUpTime\":\"" + order3[5] + "\",";
+    sentoutdata += "\"pickeUpTime\":\"" + order3[5] + "\",";
     sentoutdata += "\"restaurant\":\"" + order3[6] + "\",";
     sentoutdata += "\"price\":" + order3[7] + ",";
     sentoutdata += "\"food\":[";
